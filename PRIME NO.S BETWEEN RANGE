@@ -1,0 +1,24 @@
+#include<stdio.h>
+void main()
+{
+    int a,b;
+    printf("enter lower range value");
+    scanf("%d",&a);
+    printf("enter upper range value");
+    scanf("%d",&b);
+    for(int i=a;i<=b;i++)
+    {
+         int c=0;
+        for(int j=2;j<a;j++)
+        {
+            if(i%j==0)
+            {
+                c+=1;
+            }
+        }
+        if(c==0)
+        {
+            printf(" %d",i);
+        }
+    }
+}
